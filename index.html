@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UIKIT</title>
+	<link rel="stylesheet" type="text/css" href="css/uikit.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/uikit.js"></script>
+	<style type="text/css">
+	h1.biao{
+		color:blue;
+	}
+	.tuio{
+		display:inline-block;
+		background:pink;
+		border:1px solid #333;
+		border-radius: 3%;
+		margin:0 auto;
+	}
+	.bbbooo{
+		    font-size: 12px;
+    font-family: Consolas,monospace,serif;
+    color: #d05;
+    white-space: nowrap;
+    padding: 0 4px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background: #fafafa;
+	}
+.tr tr{
+	border-bottom:1px solid red;
+}
+	.box{
+		height:13px;
+		line-height: 13px;
+		width:100px;
+		font-size:10px;
+	}
+	.bbo_o{
+		width:100%;
+		height:auto;
+		box-sizing: border-box;
+		padding:20px 50px;
+	}
+	.biaoti{margin-top: 20px;
+		width:100%;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		color:red;
+	}
+	.biaoti span{
+		font-size: 12px;
+		color:#000;
+	}
+	.image_1{
+		height:100px;
+		width:100px;
+	}
+	/*ttttt*/
+	.tm-article-subtitle {
+    padding-left: 6px;
+    border-left: 3px solid #1FA2D6;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+	</style>
+</head>
+<body>
+<ul class="uk-tab uk-width-medium-7-10 " data-uk-tab="">
+                                    <li aria-expanded="true" class="uk-active"><a href="#">布局类组件</a></li>
+                                    <li class="" aria-expanded="false"><a href="index1.html">导航类组件</a></li>
+                                    <li class="" aria-expanded="false"><a href="#">页面元素</a></li>
+                                    <li class="" aria-expanded="false"><a href="#">常用组件</a></li>
+                                    <li class="" aria-expanded="false"><a href="#">JAVASCRIPT组件</a></li>
+                                    <li class="uk-disabled"><a href="#">UIKIT</a></li>
+                                <li class="uk-tab-responsive uk-active uk-hidden" aria-haspopup="true" aria-expanded="false"><a>Item</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"></ul><div></div></div></li>
+</ul>
+
+
+<div class="bbo_o">
+	   	<div class="biaoti">基础 布局类组件<span><a href="http://www.getuikit.net/docs/comment.html">http://www.getuikit.net/docs/comment.html</a></span></div>
+	  	<hr>
+
+	<!-- 标题 -->
+		<h1 class="biao">标题</h1>
+		<div class="bbo_h" title="标题">
+				<h1>标题</h1><span>也可以通过添加.uk-h1类来改变你的标题的大小为h1</span>
+				<h2>标题</h2><span>也可以通过添加.uk-h2类来改变你的标题的大小为h2</span>
+				<h3>标题</h3><span>也可以通过添加.uk-h3类来改变你的标题的大小为h3</span>
+				<h4>标题</h4><span>也可以通过添加.uk-h4类来改变你的标题的大小为h4</span>
+				<h5>标题</h5><span>也可以通过添加.uk-h5类来改变你的标题的大小为h5</span>
+				<h6>标题</h6><span>也可以通过添加.uk-h6类来改变你的标题的大小为h6</span>
+
+		</div>
+
+<!-- 文本级语义 -->
+		<h1 class="biao">文本级语义</h1>
+		<div class="bbo_wenben" title="文本级语义">
+				<a href="">将文本转换为超文本使用 a 标签。</a>  <br>
+				<em>强调文本使用 em 标签。</em><br>
+				<strong>强调任何额外的更重要文本使用 strong 标签。</strong><br>
+				<code>	定义内联代码片段使用 code 标签。</code><br>
+				<del>	标记文档中已被修改或删除的文本使用 del 标签。</del><br>
+				<ins>	标记文档中插入的文本使用 ins 标签。</ins><br>
+				<mark>高亮显示文本使用 mark 标签，它没有任何语义含义。</mark><br>
+				<q>定义引入的语录在 q 标签 里面使用 q 标签。</q><br>
+				<abbr>定义一个标题的缩写使用 abbr 标签。</abbr><br>
+				<dfn>	定义一个项目术语名称使用 dfn 标签。</dfn><br>
+				<small>	缩小显示不重要的文本使用 small 标签。</small><br>
+		</div>
+<!-- 引用文字 -->
+		<h1 class="biao">引用文字</h1>
+		<div class="bbo_wenben" title="引用文字">
+				<blockquote>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    				<small>Someone famous</small>
+				</blockquote>
+		</div>
+<!-- 代码块|列表 -->
+		<h1 class="biao">代码块|列表</h1>
+		<div class="bbo_wenben" title="代码块|列表">
+				<pre>
+    				<code>
+                    		<ul>
+      							<li>1</li>
+							    <li>2
+							        <ul>
+							            <li>3</li>
+							        </ul>
+							    </li>
+							</ul>
+    				</code>
+				</pre>
+		</div>
+<!-- 描述列表 -->
+		<h1 class="biao">描述列表</h1>
+		<div class="bbo_wenben" title="描述列表">
+			<pre>
+    			<code>
+					<dl>
+    						<dt>Description lists</dt>
+    						<dd>A description list defines terms and their corresponding descriptions.</dd>
+					</dl>
+				</code>
+			</pre>
+		</div>
+<!-- 12栅格系统 -->
+<!-- 网格 -->
+		<h1 class="biao">12栅格系统</h1>
+		<span>中等排水沟在网格之间应用中等的间隔，只需要添加 .uk-grid-medium 类。</span><br>
+		<span>小点的排水沟在网格之间应用较小的间隔，只需要添加 .uk-grid-small 类。</span><br>
+		<span>消除排水沟完全地去掉间隔，只需要添加 .uk-grid-collapse 类。</span><br>
+		<span>居中网格 添加 效果组件 中的<code>.uk-container-center</code>  类来让一个网格居中显示。</span><br>
+		<span>网格分隔线
+		添加 .uk-grid-divider 类用线条分隔网格列。要使用水平线分隔网格，只需在 < hr > 或 < div> 元素添加这个类。</span><br>
+		<!-- 源码排序 -->
+		<span>源码排序
+		可以更改列的显示顺序，使其在源代码中保持一个特定的列顺序。添加 .uk-push-* 类，向右移动列。添加 .uk-pull-* 类，向左移动列。这可以使你进行类似翻转移动设备或改变窗口宽度时改变列的显示顺序。这些类还可以用于偏移列，在列之间建立额外的空隙。</span>
+		<div class="uk-grid  uk-container-center uk-grid-divider" title="12栅格系统">
+		    <div class="uk-width-large-1-6 uk-width-medium-1-4 uk-width-small-1-2">1</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">2</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">3</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">4</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">5</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">6</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">7</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">8</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">9</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">10</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">11</div>
+    		<div class="uk-width-large-1-6 uk-width-medium-1-4  uk-width-small-1-2">12</div>
+		</div>
+<!-- 均匀的网格列 -->
+<h1 class="biao">均匀的网格列</h1>
+<div class="" title="均匀的网格列">
+            <ul class="uk-grid uk-grid-width-1-2 uk-container-center">
+			    <li>.uk-grid-width-1-2</li>
+			    <li>将网格均匀分为两份</li>
+			</ul>
+			<ul class="uk-grid uk-grid-width-1-2 uk-container-center">
+			    <li>.uk-grid-width-1-3</li>
+			    <li>将网格均匀分为三份</li>
+			</ul>
+			<ul class="uk-grid uk-grid-width-1-2 uk-container-center">
+			    <li>.uk-grid-width-1-4</li>
+			    <li>将网格均匀分为四份</li>
+			</ul>
+			<ul class="uk-grid uk-grid-width-1-2 uk-container-center">
+			    <li>.uk-grid-width-1-5</li>
+			    <li>将网格均匀分为五份</li>
+			</ul>
+			<ul class="uk-grid uk-grid-width-1-2 uk-container-center">
+			    <li>.uk-grid-width-1-6</li>
+			    <li>将网格均匀分为六份</li>
+			</ul>
+			<ul class="uk-grid uk-grid-width-1-2 uk-container-center">
+			    <li>.uk-grid-width-1-10</li>
+			    <li>将网格均匀分为十份</li>
+			</ul>
+<!-- 响应式宽度 -->
+			<ul class="uk-grid uk-grid-width-1-2 uk-container-center">
+			    <li>.uk-grid-width-*</li>
+			    <li>影响所有设备宽度</li>
+			    <!-- 1 -->
+			        <li>.uk-grid-width-small-*</li>
+			    <li>	影响 480px 以上的设备宽度。</li>
+			    <!-- 2 -->
+			        <li>.uk-grid-width-medium-*</li>
+			    <li>影响 768px 以上的设备宽度。</li>
+			    <!-- 3 -->
+			        <li>.uk-grid-width-large-*</li>
+			    <li>影响 960px 以上的设备宽度。</li>
+			    <!-- 4 -->
+			        <li>.uk-grid-width-xlarge-*</li>
+			    <li>影响 1220px 以上的设备宽度。</li>
+			</ul>
+</div>
+			<ul class="uk-grid uk-grid-width-1-5">
+			    <li>12</li>
+			    <li>13</li>
+			    <li>13</li>
+			    <li>13</li>
+			    <li>13</li>
+			</ul>
+
+<!-- 面板 -->
+<h1 class="biao">面板</h1>
+<span>创建拥有不同样式的布局盒。</span>
+            
+            <div class="uk-panel uk-panel-box uk-width-medium-1-3 uk-panel-hover uk-panel-box-primary uk-panel-box-primary-hover">
+            <div class="uk-panel-teaser"><img src="" alt="未显示"></div>
+            <i class="uk-icon-cog"></i>
+                <div class="uk-panel-badge uk-badge">liue</div>
+                <h3 class="uk-panel-title">xiao</h3>
+                      12222
+            </div>
+
+			<ul class="uk-grid uk-grid-width-1-2 uk-container-center">
+			    <li style="color:red">css</li>
+			    <li style="color:red">描述</li>
+			    <li >.uk-panel</li>
+			    <li>	为< div >元素添加这个类，定义面板组件。</li>
+			    <!-- 1 -->
+			        <li>.uk-panel-title</li>
+			    <li>为标题元素添加这个类创建面板标题。</li>
+			    <!-- 2 -->
+			        <li>.uk-panel-badge</li>
+			    <li>为 < div > 元素添加这个类创建一个面板的徽章。风格化徽章样式最简单的方法，就是通过加入徽章组件中的修饰符类。</li>
+			    <!-- 3 -->
+			           <li>.uk-panel-box-primary</li>
+			    <li>给大盒子添加 .uk-panel-box-primary 类来修饰面板框，并以不同的颜色使其显得突出。</li>
+			    <!-- 4 -->
+			      <li>.uk-panel-box-secondary</li>
+			    <li>为面板框添加 .uk-panel-box-secondary 类，给它一个白色的背景。</li>
+			    <!-- 5 -->
+			         <li>.uk-panel-box-primary-hover</li>
+			    <li>为面板创建鼠标经过效果，只需添加 .uk-panel-box-primary-hover 类。这将在使用锚文本时带来方便</li>
+			    <!-- 6 -->
+			    <li>.uk-panel-divider</li>
+			    <li>面板分隔行线</li>
+			    <!-- 7 -->
+			    <li>.uk-grid-divider</li>
+			    <li>面板分隔列线</li>
+			    <!-- 8 -->
+			      <li>.uk-panel-teaser</li>
+			    <li>带图片预览的面板框  为了在一个面板内显示不带有任何边框的图片，仅需添加.uk-panel-teaser类至该面板内部的< div >元素。</li>
+			    <!-- 9 -->
+			    <li>.uk-panel-space</li>
+			    <li>添加 .uk-panel-space添加类来增加面板四周的间距</li>
+			</ul>
+
+			<!-- 块 -->
+				<div class="biaoti">块/Block
+	                 <span>通过将内容片段打包成拥有不同样式的块来分割内容。||只需要为容器元素添加 .uk-block 类，就能使用这个组件了。</span>
+					</div>
+				<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-4 uk-container-center">
+					<li>.uk-block-default	添加默认的背景色彩，通常是白色或类似的颜色。</li>
+					<li>.uk-block-muted	添加亮背景色。</li>
+					<li>.uk-block-primary	添加表示着重的背景色。</li>
+					<li>.uk-block-secondary	添加另一种背景色，通常是暗色。</li>
+				
+				</div>
+				<!-- 文章 -->
+				<div class="biaoti">文章
+                     <span>在你页面中创建文章。</span>
+				</div>
+				<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-5 uk-container-center">
+					<li>.uk-article	添加这个类来定义文章组件。通常你需要使用 < article> 元素。</li>
+					<li>.uk-article-title	对一个标题添加这个类，来创建文章标题。通常会用在 < h1> 元素中。</li>
+					<li>.uk-article-meta	向包含文章元数据的段落添加这个类。</li>
+					<li>.uk-article-lead	为文章起始段落添加这个类，使其显得突出。</li>
+					<li>.uk-article-divider	对 < hr> 元素添加这个类，建立一个间隔使文章各部分分开。</li>
+				</div>
+				<article class="uk-article">
+				    <h1 class="uk-article-title">文章标题</h1>
+				    <p class="uk-article-meta">由 曹植 撰写于 2012年12月12日 | 发表在 博客</p>
+				    <p class="uk-article-lead">黄初三年，余朝京师，还济洛川。古人有言，斯水之神，名曰宓妃。感宋玉对楚王神女之事，遂作斯赋，其词曰：</p>
+				    ...
+				    <hr class="uk-article-divider">
+				    ...
+				</article>
+				<!-- 评论 -->
+				<div class="biaoti">评论
+                     <span>创建评论，比如文章的评论。</span>
+				</div>
+				<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-6 uk-container-center">
+					<li>.uk-comment	添加这个类定义评论组件。</li>
+					<li>.uk-comment-header	添加这个类创建评论header。</li>
+					<li>.uk-comment-avatar	添加到 < img> 元素创建评论者的头像。</li>
+					<li>.uk-comment-title	添加这个类到一个标题元素中，创建评论的标题。</li>
+					<li>.uk-comment-meta	为段落添加这个类，创建评论的元数据。</li>
+					<li>.uk-comment-body	为 < div> 元素添加这个类，创建评论主体。</li>
+				</div>
+				<ul class="uk-comment-list">
+                       <li>
+			                <article class="uk-comment">
+							    <header class="uk-comment-header">
+							        <img class="uk-comment-avatar" src="" alt="评论列表">
+							        <h4 class="uk-comment-title">小明</h4>
+							        <div class="uk-comment-meta">12 天前 | 传说中的大水比 | #</div>
+							    </header>
+							    <div class="uk-comment-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+							</article>
+										<ul class="uk-comment-list">
+						                       <li>
+									                <article class="uk-comment">
+													    <header class="uk-comment-header">
+													        <img class="uk-comment-avatar" src="" alt="作者">
+													        <h4 class="uk-comment-title">小明</h4>
+													        <div class="uk-comment-meta">12 天前 | 传说中的大水比 | #</div>
+													    </header>
+													    <div class="uk-comment-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+													</article>
+						                       </li>
+							     		</ul>
+                       </li>
+				</ul>
+<!-- 效果/Utility -->
+				<div class="biaoti">效果/Utility
+                     <span>一些实用的效果类集合，它们可以用来风格化你的网页内容。</span>
+				</div>
+				<h1 class="biao">容器</h1>
+				<div class="uk-width-medium-1-2 uk-container-center uk-panel uk-panel-box uk-panel-box-primary">Centered block element</div>
+				<h1 class="biao">浮动与清除浮动</h1>
+				<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-3 uk-container-center">
+					<li>.uk-float-left	浮动元素为左对齐。</li>
+					<li>.uk-float-right	浮动元素为右对齐。</li>
+					<li>.uk-clearfix	向父容器添加这个类来清除浮动。</li>
+				</div>
+				<!-- 清除浮动 -->
+				<div class="uk-clearfix">
+                   <div class="uk-float-right">right</div>
+                   <div class="uk-float-left">left</div>
+                </div>
+				<!-- 单独的用来格式化上下文的块元素/New block formatting context -->
+
+                <div class="uk-block uk-block-muted uk-grid uk-grid-width-1-3 uk-container-center">
+					<li>代替使用 .uk-clearfix 类，你可以单独创建一个块元素来清除上下文的浮动。基于你的设置，你可以对其进行评估哪种方式更加适合。</li>
+					<li>.uk-nbfc	设置 overflow 为 hidden 来创建一个单独的用来格式化上下文的块元素。</li>
+					<li>.uk-nbfc-alt	设置 display 为 table-cell 来创建一个单独的用来格式化上下文的块元素。</li>
+				</div>
+				<!-- 图片与对象的对齐  有间距地将图片与其他元素（比如文本）对齐。 -->
+				  <div class="uk-block uk-block-muted uk-grid uk-grid-width-1-3 uk-container-center">
+					<li>.uk-align-left	向左浮动元素，并创建右侧及底部的间距。</li>
+					<li>.uk-align-right	向右浮动元素，并创建左侧及底部的间距。</li>
+					<li>.uk-align-medium-left	仅影响宽度 768px 及以上的设备。</li>
+					<li>.uk-align-medium-right	仅影响宽度 768px 及以上的设备。</li>
+					<li>.uk-align-center	居中对齐元素，并创建底部间距。</li>
+				</div>
+				<!-- 例子 -->
+				<p class="uk-clearfix">
+				    <img class="uk-align-medium-right" src="" alt="图片图片图片图片图片图片图片图片图片图片图片图片图片图片">
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<!-- 垂直对齐 -->
+					<h1 class="biao">垂直对齐  将对象垂直对齐，你必须为需要对齐的对象创建一个父容器。</h1>
+
+				<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-4 uk-container-center">
+					<li>.uk-vertical-align	向父容器添加这个类。这个容器需要被设定一个高度。</li>
+					<li>.uk-vertical-align-middle	向子元素添加这个类，使内容居中对齐。</li>
+					<li>.uk-vertical-align-bottom	向子元素添加这个类，使内容与底部对齐。</li>
+					<li>.uk-height-1-1	这个辅助类用来赋予100％的高度。</li>
+				</div>
+				<!-- 居中整个页面 -->
+				<!-- 水平居中 -->
+				<!-- 视窗高度 -->
+				<h1 class="biao"><a href="http://www.getuikit.net/docs/utility.html">http://www.getuikit.net/docs/utility.html</a></h1>
+				<h1 class="biao">元素的定位</h1>
+			    <div class="uk-block uk-block-muted uk-grid uk-grid-width-1-5 uk-container-center">
+					<li>.uk-position-top	将元素绝对定位在顶部</li>
+					<li>.uk-position-top-left	将元素绝对定位在左侧顶部</li>
+					<li>.uk-position-top-right	将元素绝对定位在右侧顶部</li>
+					<li>.uk-position-bottom	将元素绝对定位在底部</li>
+					<li>.uk-position-bottom-left	将元素绝对定位在左侧底部</li>
+					<li>.uk-position-bottom-right	将元素绝对定位在右侧底部</li>
+					<li>.uk-position-cover	为元素添加绝对定位，并将其扩展覆盖其父元素</li>
+					<li>.uk-position-relative	为元素添加relative定位方法</li>
+					<li>.uk-position-z-index	为元素添加数值为1的 z-index 属性</li>
+				</div>
+
+
+		<div class="biaoti">响应式对象<span>在UIkit中，图片会默认地自适应它的父容器。如果你想将响应式特性应用于媒体元素，比如视频对象，只需要添加下面的类中的一个。</span></div>
+				    <div class="uk-block uk-block-muted uk-grid uk-grid-width-1-3 uk-container-center">
+					<li>.uk-responsive-width	根据父容器的宽度调整对象的宽度，保持对象原始的宽高比。</li>
+					<li>.uk-responsive-height	根据父容器的高度调整对象的高度，保持对象原始的宽高比。</li>
+					<li>同样，可以添加 .uk-responsive-width 类名到 iframe ，此iframe需要有预设的width和height属性。</li>
+					
+				    </div>
+
+				<!-- http://www.getuikit.net/docs/utility.html -->
+				<h1 class="biao">行内的 SVG <br>	
+				SVG 或可缩放的矢量图形真的很棒，比如作为LOGO使用时，无论是缩放还是用于动画，它都很清晰。要使用 CSS 来控制 SVG，只需要为图片标签添加 data-uk-svg 属性。这可以将 SVG 转变行内元素，并具有所有属性，包括 ID、class、width、height 等等，你可以通过 CSS 方便地控制它。</h1>
+				<span>	< img src=" my-image.svg " data-uk-svg></span>
+				<!-- 外边距 Margin -->
+<div class="biaoti uk-margin-large-top">外边距 Margin
+   	<span>添加一个下面的类为块元素添加外边距。</span>
+   	<span>.uk-margin-small	为一个段落添加较小的顶部和底部外边距。</span>
+   	<span>.uk-margin-large	为一个段落添加较大的顶部和底部外边距。</span>
+</div>
+<hr>
+	  			<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-5 uk-container-center">
+					<li>.uk-margin	为一个段落添加相同的顶部和底部外边距。</li>
+					<li>.uk-margin-top	添加顶部外边距。</li>
+					<li>.uk-margin-bottom	添加底部外边距。</li>
+					<li>.uk-margin-left	添加左侧外边距。</li>
+					<li>.uk-margin-right	添加右侧外边距。</li>
+				</div>
+				<!-- 移除外边距 -->
+<div class="biaoti">移除外边距
+   	<span>添加一个下面的类来移除块元素的外边距。</span>
+</div>
+<hr>
+	  			<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-3 uk-container-center">
+					<li>.uk-margin-remove	移除全部外边距。</li>
+					<li>.uk-margin-top-remove	移除顶部外边距。</li>
+					<li>.uk-margin-bottom-remove	移除底部外边距。</li>
+				</div>
+<!-- 自动外边距Auto margin -->
+<div class="biaoti">自动外边距Auto margin
+   	<span>
+为堆叠的多个元素间距，例如，在较小的视口中堆叠显示多个并列的内联元素时，只需要添加 data-uk-margin 属性到它们的父元素，即可自动为子元素添加 the .uk-margin-small-top 。</span>
+<span>默认情况下，data属性为堆叠的元素添加 .uk-margin-small-top 类。如果需要添加更大的margin，只需要添加 {cls:'.uk-margin-top'} 选项就行。</span>
+</div>
+<hr>
+					<p class="uk-width-1-2" data-uk-margin="">
+                                <button class="uk-button">Button</button>
+                                <button class="uk-button">Button</button>
+                                <button class="uk-button">Button</button>
+                                <button class="uk-button">Button</button>
+                                <button class="uk-button">Button</button>
+                                <button class="uk-button uk-margin-small-top">Button</button>
+                                <button class="uk-button uk-margin-small-top">Button</button>
+                                <button class="uk-button uk-margin-small-top">Button</button>
+                                <button class="uk-button uk-margin-small-top">Button</button>
+                                <button class="uk-button uk-margin-small-top">Button</button>
+                    </p>
+<!-- 移除块元素内的 padding  -->
+<div class="biaoti">移除块元素内的 padding
+   	<span>移除块元素内的 padding ，添加以下类中的一个就行了。</span>
+</div>
+<hr>
+	  			<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-3 uk-container-center">
+					<li>.uk-padding-remove	移除所有padding.</li>
+					<li>.uk-padding-top-remove	移除顶部padding.</li>
+					<li>.uk-padding-bottom-remove	移除底部padding</li>
+					<li>.uk-padding-vertical-remove	移除顶部和底部padding.</li>
+				</div>
+<!-- Border 半径 -->
+<div class="biaoti">Border 半径
+   	<span>要为元素添加圆角，添加 .uk-border-rounded即可。要使用圆形，添加 .uk-border-circle 即可。</span>
+</div>
+<hr>
+<div class="uk-cover-background uk-width-1-3 uk-container-center">
+			<img class="uk-border-rounded  image_1" src="image/nv.jpg" alt="">
+			<img class="uk-border-circle image_1" src="image/nv1.jpg" alt="">
+</div>
+
+
+<!-- 标题变大 -->
+<div class="biaoti">标题变大
+   	<span>为了增大平板电脑和台式机下标题字体的大小，只需添加 .uk-heading-large 类。</span>
+</div>
+    <h1 class="uk-heading-large">标题变大实例<h1>
+    <p>如果要去掉链接的默认颜色，只需添加 <code>.uk-link-muted</code> 类到锚元素或它的父元素。</p>
+<!-- 哑色链接 -->
+<hr><hr>
+<div class="biaoti">哑色链接
+   	<span>如果要去掉链接的默认颜色，只需添加 .uk-link-muted 类到锚元素或它的父元素。</span>
+</div>
+<a class="uk-link-muted">哑色链接<a>
+<a>正常链接<a>
+
+<h1 class="uk-link-muted"><a>哑色链接<a><h1>
+<h1><a>正常链接<a><h1>
+<ul class="uk-link-muted">
+    <li><a>正常链接</a></li>
+    <li><a>正常链接</a></li>
+    <li><a>正常链接</a></li>
+</ul>
+<ul class="uk-link-muted">
+    <li><a>哑色链接</a></li>
+    <li><a>哑色链接</a></li>
+    <li><a>哑色链接</a></li>
+</ul>
+<p> <code>.uk-link-muted</code> 必须放在a标签上面</p>
+<hr>
+<!-- 可滚动的预格式化文本 -->
+<div class="biaoti">可滚动的预格式化文本
+   	<span>添加 <code>.uk-scrollable-text</code> 类设置一个最大高度，并提供一个垂直滚动条。这对预格式化的文本是非常有用的，它可以让你的代码块节省更多的空间。</span>
+</div>
+
+<h3 class="tm-article-subtitle">示例 </h3>
+<pre class="uk-scrollable-text">
+			<code class="xml"><span class="comment">&lt;!-- This is sample code to demonstrate preformatted text with a scrollbar. --&gt;</span>
+			<span class="tag">&lt;	<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-grid"</span>&gt;</span><span class="tag">&lt;<span class="title">div</span><span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2"</span> &gt;</span><span class="tag">&lt;
+			<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-panel uk-panel-box uk-text-left"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2"</span>&gt;</span>
+			        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-panel uk-panel-box uk-text-right"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-grid"</span>&gt;</span>
+			    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2"</span>&gt;</span>
+			        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-panel uk-panel-box uk-text-center"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2"</span>&gt;</span>
+			        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-panel uk-panel-box uk-text-justify"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+			<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-grid"</span>&gt;</span>
+			    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2"</span>&gt;</span>
+			        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-panel uk-panel-box uk-text-break"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-width-medium-1-2"</span>&gt;</span>
+			        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"uk-panel uk-panel-box"</span>&gt;</span><span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"uk-margin-remove uk-text-truncate"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">p</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+			<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code>
+</pre>
+<!-- 可滚动的盒子 -->
+<div class="biaoti">可滚动的盒子
+   	<span>添加 <code>.uk-scrollable-box</code>类创建一个具有最大高度及垂直滚动条的看起来像面板的盒子。它可以包含任何类型的内容。</span>
+</div>
+<h3 class="tm-article-subtitle">示例 </h3>
+<div class="uk-scrollable-box uk-width-medium-1-3">
+                                <ul class="uk-list">
+                                    <li><label><input type="checkbox"> Category 1</label></li>
+                                    <li>
+                                        <label><input type="checkbox"> Category 2</label>
+                                        <ul>
+                                            <li><label><input type="checkbox"> Category 2.1</label></li>
+                                            <li><label><input type="checkbox"> Category 2.2</label></li>
+                                            <li>
+                                                <label><input type="checkbox"> Category 2.3</label>
+                                                <ul>
+                                                    <li><label><input type="checkbox"> Category 2.3.1</label></li>
+                                                    <li><label><input type="checkbox"> Category 2.3.2</label></li>
+                                                </ul>
+                                            </li>
+                                            <li><label><input type="checkbox"> Category 2.4</label></li>
+                                        </ul>
+                                    </li>
+                                    <li><label><input type="checkbox"> Category 3</label></li>
+                                    <li><label><input type="checkbox"> Category 4</label></li>
+                                </ul>
+       </div>
+       <!-- 溢出容器/Overflow container -->
+<div class="biaoti">溢出容器/Overflow container
+   <span>当容器内部的元素宽度超过了容器本身，只需要为容器的 < div> 元素添加一个<code>.uk-overflow-container</code>  类，就能为容器带来一个水平方向的滚动条。 在响应式网页中处理表格时很有用，因为表格可能在某些断点会显得过于宽大。</span>
+</div>
+<h3 class="tm-article-subtitle">示例 </h3>
+<div class="uk-overflow-container">
+                                <table class="uk-table uk-table-striped uk-table-condensed uk-text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th>Table Heading</th>
+                                            <th>Table Heading</th>
+                                            <th>Table Heading</th>
+                                            <th>Table Heading</th>
+                                            <th>Table Heading</th>
+                                            <th>Table Heading</th>
+                                            <th>Table Heading</th>
+                                            <th>Table Heading</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Table Footer</td>
+                                            <td>Table Footer</td>
+                                            <td>Table Footer</td>
+                                            <td>Table Footer</td>
+                                            <td>Table Footer</td>
+                                            <td>Table Footer</td>
+                                            <td>Table Footer</td>
+                                            <td>Table Footer</td>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                            <td>Table Data</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+</div>
+<!-- 显示效果 -->
+<div class="biaoti">显示效果
+   <span>添加这些类中的一个改变元素的 display 属性</span>
+</div>
+	  			<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-3 uk-container-center">
+					<li>.uk-display-block	强制将元素改变成块元素。</li>
+					<li>.uk-display-inline	强制将元素改变成内联元素。</li>
+					<li>.uk-display-inline-block	强制将元素改变成内联块元素。</li>
+				</div>
+<!-- 可见性效果 -->
+<div class="biaoti">可见性效果</div>
+	  			<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-3 uk-container-center">
+					<li>.uk-hidden	在所有设备上隐藏该元素。</li>
+					<li>.uk-hidden-touch	在触控设备上隐藏</li>
+					<li>.uk-hidden-notouch	在非触控设备上隐藏</li>
+					<li>.uk-invisible	隐藏该元素，但是不在流量上删除该元素。</li>
+					<li>.uk-visible-hover	悬停时通过 display: block来显示隐藏的内容。将这个类添加到父元素中。</li>
+					<li>.uk-visible-hover-inline	悬停时通过 display: inline-block 来显示隐藏的内容。将这个类添加到父元素中。</li>
+				</div>
+
+<div class="uk-visible-hover">
+hover显示 <code>.uk-visible-hover</code>
+    <div class="uk-hidden box">显示的内容</div>
+</div>
+<div class="uk-visible-hover-inline">
+hover显示 <code>.uk-visible-hover-inline</code>
+    <div class="uk-hidden box">显示的内容</div>
+</div>
+<!-- 响应式可见性 -->
+<div class="biaoti">响应式可见性
+   <span>你可以在特定的视口宽度下对内容进行显示或隐藏。通过设置断点变量可以很容易的进行修改。由于不同设备的尺寸变得越来越模糊，所以类的名称保持通用性而不提及任何具体的设备名称。</span>
+</div>
+<div class="uk-overflow-container">
+                                <table class="uk-table uk-table-line uk-text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th class="uk-width-1-4">Class</th>
+                                            <th class="uk-width-1-4">Small<br>
+                                              <small>(手机)</small><br><small style="font-weight: normal;">最大 767</small></th>
+                                            <th class="uk-width-1-4">Medium<br>
+                                              <small>(平板)</small><br><small style="font-weight: normal;">768 到 959</small></th>
+                                            <th class="uk-width-1-4">Large<br>
+                                              <small>(PC)</small><br><small style="font-weight: normal;">960 以上</small></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.uk-visible-small</code></td>
+                                            <td class="uk-text-success">可见Visible</td>
+                                            <td class="uk-text-muted">隐藏Hidden</td>
+                                            <td class="uk-text-muted">隐藏Hidden</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-visible-medium</code></td>
+                                            <td class="uk-text-muted">隐藏Hidden</td>
+                                            <td class="uk-text-success">可见Visible</td>
+                                            <td class="uk-text-muted">隐藏Hidden</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-visible-large</code></td>
+                                            <td class="uk-text-muted">隐藏Hidden</td>
+                                            <td class="uk-text-muted">隐藏Hidden</td>
+                                            <td class="uk-text-success">可见Visible</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-hidden-small</code></td>
+                                            <td class="uk-text-muted">隐藏Hidden</td>
+                                            <td class="uk-text-success">可见Visible</td>
+                                            <td class="uk-text-success">可见Visible</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-hidden-medium</code></td>
+                                            <td class="uk-text-success">可见Visible</td>
+                                            <td class="uk-text-muted">隐藏Hidden</td>
+                                            <td class="uk-text-success">可见Visible</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-hidden-large</code></td>
+                                            <td class="uk-text-success">可见Visible</td>
+                                            <td class="uk-text-success">可见Visible</td>
+                                            <td class="uk-text-muted">隐藏Hidden</td>
+                                        </tr>
+                                    </tbody>
+                              </table>
+                          </div>
+ <!--Flex 布局-->
+ <div class="biaoti">Flex 布局
+   <span>默认情况下，flex容器显示为块元素。为了仍然保持按照flexbox模型对其内容进行布局，并赋予其行内元素的行为，需要用到 <code>.uk-flex-inline</code> 类来替代 <code> .uk-flex</code></span>
+</div>
+ <div class="uk-flex">
+                      
+                        <div class="uk-width-1-4 uk-panel uk-panel-box">Box</div>
+                        <div class="uk-width-1-4 uk-panel uk-panel-box uk-margin-left">Box</div>
+                        <div class="uk-width-1-4 uk-panel uk-panel-box uk-margin-left">Box</div>
+                        <div class="uk-width-1-4 uk-panel uk-panel-box uk-margin-left" style="height: 100px;">Box</div>
+</div>
+<!-- 对齐 -->
+
+<!-- 这些类定义flex条目的水平或垂直对齐，并赋予它们彼此之间的间距。 -->
+ <div class="biaoti">Flex  对齐
+   <span>这些类定义flex条目的水平或垂直对齐，并赋予它们彼此之间的间距。</span>
+</div>
+<table class="uk-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>描述</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.uk-flex-center</code></td>
+                                            <td>添加这个类，水平居中flex条目</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-right</code></td>
+                                            <td>添加这个类，右对齐flex条目</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-top</code></td>
+                                            <td>添加这个类，顶部对齐flex条目</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-middle</code></td>
+                                            <td>添加这个类，垂直居中flex条目</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-bottom</code></td>
+                                            <td>添加这个类，底部对齐flex条目</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-space-between</code></td>
+                                            <td>添加这个类，使得条目均匀分布，第一个条目在主轴的开头，最后一个条目在主轴的末尾。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-space-around</code></td>
+                                            <td>添加这个类，使得条目均匀分布,使每个条目具有相同的左右空间。</td>
+                                        </tr>
+                                    </tbody>
+        </table>
+<div class="biaoti">Flex  方向
+   <span>这些类用于定义flex主轴的方向。默认地，flex条目按照水平从左到右的方向放置。</span>
+</div>
+<table class="uk-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>描述</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.uk-flex-row-reverse</code></td>
+                                            <td>添加这个类，使flex条目从右到左排列。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-column</code></td>
+                                            <td>添加这个类，使flex条目垂直排列成一列。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-column-reverse</code></td>
+                                            <td>添加这个类，使flex条目从下到上排列。</td>
+                                        </tr>
+                                    </tbody>
+       </table>
+       <!-- 换行 -->
+<div class="biaoti">Flex  换行
+  <span>默认情况下，flex条目将它们自身拟合到一行中。添加 <code> .uk-flex-wrap</code> 类,使条目不再匹配视口时切换到另一行。要改变条目的方向，使它们从右到左排列，添加<code>.uk-flex-wrap-reverse</code> 类即可。下面这些类用来修饰换行的flex条目的对齐属性。强制将 flex条目放入一行，添加 <code>.uk-flex-nowrap</code> 类即可。</span>
+</div>
+<table class="uk-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>描述</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.uk-flex-wrap-top</code></td>
+                                            <td>添加这个类，使多行flex条目对齐到顶部。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-wrap-middle</code></td>
+                                            <td>添加这个类，使多行flex条目垂直居中。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-wrap-bottom</code></td>
+                                            <td>添加这个类，使多行flex条目对齐到底部。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-wrap-space-between </code></td>
+                                            <td>添加这个类，使条目的行均匀分布，第一行在容器顶部，最后一行在容器底部。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-wrap-space-around</code></td>
+                                            <td>添加这个类，是条目的行均匀分布，每一行都有一样的空间。</td>
+                                        </tr>
+                                    </tbody>
+         </table>
+         <!-- 条目排序 -->
+<div class="biaoti">Flex  条目排序
+  <span>默认地，flex条目根据源码的顺序排列。要将某个元素作为第一个或者最后一个进行显示，只需要添加下列类名中的一个。</span>
+</div>
+<table class="uk-table tr">
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>描述</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.uk-flex-order-first</code></td>
+                                            <td>将此条目显示为第一个</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-order-last</code></td>
+                                            <td>将此条目显示为最后一个</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-order-first-small</code><br><code>.uk-flex-order-last-small</code></td>
+                                            <td>作用于视口宽度 <em>480px</em> 以上设备。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-order-first-medium</code><br><code>.uk-flex-order-last-medium</code></td>
+                                            <td>作用于视口宽度 <em>768px</em> 以上设备。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-order-first-large</code><br><code>.uk-flex-order-last-large</code></td>
+                                            <td>作用于视口宽度 <em>960px</em> 以上设备。</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.uk-flex-order-first-xlarge</code><br><code>.uk-flex-order-last-xlarge</code></td>
+                                            <td>作用于视口宽度 <em>1220px</em> 以上设备。</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+ <!-- 条目的规模 -->
+ <div class="biaoti">Flex  条目的规模
+  <span>要确定一个flex条目需要占用多大的空间，为条目添加以下类中的一个即可。</span>
+</div>
+				<div class="uk-block uk-block-muted uk-grid uk-grid-width-1-3 uk-container-center">
+					<li>.uk-flex-item-none	由内容决定其尺寸</li>
+					<li>.uk-flex-item-auto	按条目的内容分配空间。</li>
+					<li>.uk-flex-item-1	空间分配完全基于Flex</li>
+				</div>
+<!-- Flex与网格 -->
+ <div class="biaoti">Flex与网格
+  <span>Flex组件可以与 网格 组合使用。</span>
+</div>
+<div class="uk-grid uk-flex-middle" data-uk-grid-margin="">
+                                <div class="uk-width-medium-1-3 uk-row-first">
+                                    <div class="uk-panel"><img src="image/nv1.jpg" alt="Placeholder"></div>
+                                </div>
+                                <div class="uk-width-medium-2-3 uk-flex-middle">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+<div class="tuio">覆盖/Cover</div>
+  <div class="biaoti">覆盖/Cover
+  <span>扩展图片或视频至覆盖整个容器。</span>
+  <p>这个组件允许你使用图片、对象甚至iframe（images, objects or even iframes）来创建全屏效果。无论是什么元素，它都将垂直居中、水平居中并且不会失去原有的比例即实现覆盖它的容器。你还可以在图片或者视频上面放入附加内容，比如文字或图片等。</p>
+</div>
+  <div class="biaoti">用法
+  <span>这个覆盖组件具有不同的用法，取决于你究竟是使用的背景图片、对象或者iframe。最简单的方式就是为带有背景图片的 <div> 元素添加<code> .uk-cover-background </code>类。</span>
+</div>
+<div class="uk-cover-background uk-width-1-6" style="height: 300px; background-image: url(image/nv1.jpg);"></div>
+<!-- 视频 -->
+  <div class="biaoti">视频
+  <span>创建一个覆盖它的父容器的视频，添加 .uk-cover-object 类到视频。然后用一个容器元素包裹视频并为该容器添加 .uk-cover 类来裁剪内容。</span>
+</div>
+<div class="uk-cover uk-width-1-3" style="height: 300px;">
+                                <video class="uk-cover-object" width="600" height="400" autoplay="" loop="" muted="" controls="">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1" type="video/mp4">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1" type="video/ogg">
+                                </video>
+                            </div>
+
+                            <!-- Iframe -->
+  <div class="biaoti">Iframe
+  <span>要将覆盖组件应用到 iframe ，你只需要为 iframe 添加 data-uk-cover 属性。然后，再添加 .uk-cover 类到包含iframe的容器来裁剪内容。</span>
+</div>
+
+<div class="uk-cover uk-width-1-3" style="height: 300px;">
+                                <iframe data-uk-cover="" src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;api=1" width="560" height="315" frameborder="0" allowfullscreen="" style="width: 823px; height: 463px;"></iframe>
+                            </div>
+  <div class="biaoti">图片响应式 
+  <span>为覆盖图片添加响应式行为，你需要添加<code> .uk-invisible </code>类到 < img> 元素，并将它放在覆盖元素内部。这样的话，它就能适应图片的响应式行为了。</span>
+  <span><span class="uk-badge">注意</span>添加 效果组件 中的<code> .uk-height-viewport</code> 类，会扩展父容器的高度填满整个视口。</span>
+</div>
+<div class="uk-cover-background uk-width-1-3 uk-container-center" style="background-image: url(image/nv.jpg);">
+                                <img class="uk-invisible" src="image/nv.jpg" width="600" height="400" alt="Placeholder">
+                            </div>
+<div class="biaoti"> 视频
+  <span>为视频添加响应式行为，你同样需要为覆盖容器添加<code>.uk-position-relative</code>  类，并将 <code>.uk-position-absolute</code> 类添加到覆盖对象上。对于irame也是这样操作。</span>
+</div>
+
+<div class="uk-cover uk-position-relative uk-width-1-3" style="height: 300px;">
+                                <img class="uk-invisible" src="image/nv.jpg" width="600" height="400" alt="">
+                                <video class="uk-cover-object uk-position-absolute" width="600" height="400" autoplay="" loop="" muted="" controls="">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test2" type="video/mp4">
+                                    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test2" type="video/ogg">
+                                </video>
+                            </div>
+
+
+  <!-- 内容的定位/Position content -->
+  <div class="biaoti"> 内容的定位/Position content
+  <span>你还能在覆盖元素上面绝对定位内容。要实现这个效果，只需添加 效果组件 中的 .uk-position-cover 类到图片或视频后面的容器元素。如果想要实现垂直居中并且水平居中，那就使用 Flex 组件 吧。</span>
+</div>
+<div class="uk-cover-background uk-position-relative uk-width-1-4 uk-container-center" style="height: 300px; background-image: url(image/nv.jpg);">
+                                <img class="uk-invisible" src="image/nv.jpg" width="600" height="400" alt="">
+                                <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+                                    <div style="background: rgba(42, 142, 183, 0.8); font-size: 20px; line-height: 75px; color: #fff;">内容的定位/Position content</div>
+                                </div>
+                            </div>
+  <!-- http://www.getuikit.net/docs/nav.html -->
+
+
+
+
+
+
+
+                            
+
+
+
+
+
+
+
+				
+
+
+
+
+</div>
+
+
+	
+</body>
+</html>
